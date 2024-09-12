@@ -1,0 +1,24 @@
+.gridColumn{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    flex-grow: 1;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.gridRow{
+    display: flex;
+    border: 1px solid white;
+    flex-grow: 1;
+    min-height: 20px;
+    min-width: 20px;
+    min-height: auto;
+}
+
+#Container {
+    width: 920px;
+    height: 920px;
+    margin: auto;
+    margin-top: 50px;
+}
