@@ -13,4 +13,4 @@ for (i = 0; i < boxCount; i ++) {
     }
 }
 
-//colums.addEventListener('hover', )
+//colums.addEventListener('onmouseover', )
