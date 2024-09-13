@@ -17,8 +17,8 @@
 }
 
 #Container {
-    width: 920px;
-    height: 920px;
+    width: 960px;
+    height: auto;
     margin: auto;
     margin-top: 50px;
 }

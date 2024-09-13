@@ -1,8 +1,14 @@
-const container = document.getElementById("Container");
-const rows = document.getElementById("gridRow");
-const colums = document.getElementById("gridColumn");
+const container = document.querySelector("#Container");
+const gridMenu = document.createElement('div')
+const gridSize = document.createElement('input')
 
-let boxCount = 32
+const gridChange = document.createElement('button')
+gridChange.innerText = "Change Grid";
+
+const mainBody = document.querySelector("body")
+
+
+let boxCount = 16
 for (i = 0; i < boxCount; i ++) {
     let row = document.createElement("div");
     container.appendChild(row).className = "gridRow";
@@ -13,4 +19,15 @@ for (i = 0; i < boxCount; i ++) {
     }
 }
 
-//colums.addEventListener('onmouseover', )
+const rows = document.querySelector(".gridRow");
+const colums = document.querySelector("div.gridColumn");
+
+mainBody.insertBefore(gridMenu, container);
+gridMenu.appendChild(gridSize);
+gridMenu.appendChild(gridChange);
+
+document.querySelectorAll('.gridColumn').forEach(item => {
+    item.addEventListener('mouseover', event => {
+        item.style.backgroundColor = "yellow"
+    })
+  })
